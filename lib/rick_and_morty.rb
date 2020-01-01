@@ -5,15 +5,20 @@ module RickAndMorty
   class Ricked
     include HTTParty
 
-    base_uri("https://rickandmortyapi.com/api/")
+    base_uri("rickandmortyapi.com/api/")
 
     def characters
-      self.class.get('character/', headers: {"Accept" => "application/json"})
+      self.class.get('/character/', headers: headers)
     end
 
     def character(id)
-      self.class.get("character/#{id}", headers: {"Accept" => "application/json"})
+      self.class.get("/character/#{id}", headers: headers)
     end
 
+    private
+
+    def headers
+      {"Accept" => "application/json"}
+    end
   end
 end
