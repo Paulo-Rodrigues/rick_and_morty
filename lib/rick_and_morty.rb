@@ -8,11 +8,11 @@ module RickAndMorty
     base_uri("rickandmortyapi.com/api/")
 
     def characters
-      self.class.get('/character/', headers: headers)
+      self.class.get('/character/', headers: headers).parsed_response
     end
 
     def character(id)
-      self.class.get("/character/#{id}", headers: headers)
+      self.class.get("/character/#{id}", headers: headers).parsed_response
     end
 
     private
