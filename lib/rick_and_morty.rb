@@ -22,3 +22,5 @@ module RickAndMorty
     # end
   end
 end
+
+require 'rick_and_morty/characters'
