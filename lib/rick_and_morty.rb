@@ -8,17 +8,12 @@ module RickAndMorty
     base_uri("rickandmortyapi.com/api/")
 
     def characters
-      self.class.get('character/', headers: headers)
+      self.class.get('character/', headers: {"Accept" => "application/json"})
     end
 
     def character(id)
-      self.class.get("character/#{id}", headers: headers)
+      self.class.get("character/#{id}", headers: {"Accept" => "application/json"})
     end
 
-    private
-
-    def headers
-      {"Accept" => "application/json"}
-    end
   end
 end
