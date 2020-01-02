@@ -20,6 +20,17 @@ Or install it yourself as:
 
 ## Usage
 
+You can retrieve info of characters and locations, like this:
+```ruby
+all_characters = RickAndMorty::Characters.new
+all_characters.characters
+
+```
+find a character by id
+```ruby
+morty = RickAndMorty::Characters.new
+morty.character(2)
+```
 
 ## Development
 
