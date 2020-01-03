@@ -1,6 +1,6 @@
 # RickAndMorty
 
-A gem to retrieve info from Rick and Morty API [API](https://rickandmortyapi.com/)
+A gem to retrieve info from Rick and Morty [API](https://rickandmortyapi.com/)
 
 ## Installation
 
