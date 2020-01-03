@@ -31,6 +31,11 @@ find a character by id
 morty = RickAndMorty::Characters.new
 morty.character(2)
 ```
+for locations
+```ruby
+locations = RickAndMorty::Locations.new
+locations.locations
+```
 
 ## Development
 
