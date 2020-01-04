@@ -7,4 +7,12 @@ RSpec.describe RickAndMorty::Characters do
       expect(character.character(2)['name']).to eq('Morty Smith')
     end
   end
+
+  describe 'a list of characters' do
+    it 'array of characters' do
+      characters = RickAndMorty::Characters.new
+      expect(characters.characters).to be_kind_of(Array)
+    end
+  end
+
 end
