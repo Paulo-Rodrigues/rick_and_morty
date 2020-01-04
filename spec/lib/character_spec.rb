@@ -1,10 +1,10 @@
 require 'spec_helper'
 
-describe RickAndMorty::Character do
-  describe 'status' do
-    it '200 ok' do
-      characters = RickAndMorty::Character.new
-      expect(characters.code).to be(200)
+RSpec.describe RickAndMorty::Characters do
+  describe 'returns morty character' do
+    it 'returns one character by its id' do
+      character = RickAndMorty::Characters.new
+      expect(character.character(2)['name']).to eq('Morty Smith')
     end
   end
 end

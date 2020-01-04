@@ -1,5 +1,7 @@
-class Locations < Ricked
-  def locations
-    self.class.get("/locations").parsed_response
+module RickAndMorty
+  class Locations < Ricked
+    def locations
+      self.class.get("/locations").parsed_response
+    end
   end
 end
